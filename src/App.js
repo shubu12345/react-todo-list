@@ -3,9 +3,18 @@ import ToDoList from './ToDoList'
 import './App.css';
 
 let App = () => {
-
+  let time = new Date().toLocaleTimeString();
   const [inputList, setInputList] = useState("");
   const [items, setItems] = useState([]);
+
+  const [ctime, settime] = useState(time);
+
+  const updateTime = () => {
+    time = new Date().toLocaleTimeString();
+    settime(time);
+  }
+
+  setInterval(updateTime, 1000);
 
 const itemEvent = (event) => {
   setInputList(event.target.value);
@@ -30,6 +39,7 @@ return (
   <>
   <div className='main-div'>
   <div className='center-div'>
+  <h4>{time}</h4>
   <br />
   <h1> ToDO List </h1>
   <br />
