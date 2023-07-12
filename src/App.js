@@ -39,7 +39,7 @@ return (
   <>
   <div className='main-div'>
   <div className='center-div'>
-  <h4>{time}</h4>
+  <h4>{ctime}</h4>
   <br />
   <h1> ToDO List </h1>
   <br />
