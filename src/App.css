@@ -104,7 +104,9 @@ ol li {
 
 @media (max-width: 768px) {
   .center-div{
-    width: 55%;
+    width: 90%;
+    min-height: 375px;
+    height: auto;
   }
 
   .todo_style .fa-times {
