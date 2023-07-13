@@ -39,7 +39,7 @@ return (
   <>
   <div className='main-div'>
   <div className='center-div'>
-  <h4>{ctime}</h4>
+  <h4><p style={{color: "red", padding: 0, margin: 0}}>Time</p>{ctime}</h4>
   <br />
   <h1> ToDO List </h1>
   <br />
